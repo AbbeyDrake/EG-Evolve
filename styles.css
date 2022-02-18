@@ -1,0 +1,177 @@
+body {
+    background-color: #DBDBDB;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to right, #D33747, #DE616D, #EB9BA4, #FFF1F3);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin: 0;
+    padding: 30px;
+    color: rgb(247, 247, 247);
+}
+
+nav {
+    color: black;
+    background-color: #969696;
+    margin-bottom: 20px;
+
+}
+
+.carousel {
+    border: solid black
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.carousel-local-shops {
+    background-color: rgb(169, 231, 190);
+    color: black;
+    min-height: 450px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+.carousel-local-shops p {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+
+}
+
+.carousel-caption-local-shops {
+    top: 0;
+    bottom: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel-caption-local-shops img {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: solid black 2px;
+}
+
+.map-container-5 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-5 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+footer {
+    background-color: rgba(51, 85, 66, 0.5);
+    height: 50px;
+}
+
+#carouselButton {
+    position: absolute;
+    /*puts at bottom right of carousel*/
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    /*makes sure buttons are overlayed instead of hidden underneath carousel*/
+}
+
+.btn-dark {
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#careCard {
+    align-items: center;
+    margin: auto;
+    width: 20rem;
+    height: 50rem;
+    box-shadow: 5px 5px 10px 0px;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.plant-care-heading {
+    border-bottom: 2px inset black;
+}
+
+.at-a-glance {
+    border: 3px groove black;
+    border-radius: 10px;
+}
+
+
+.accordion-category,
+a:hover {
+    color: rgb(60, 83, 60);
+    text-decoration: none;
+    font-style: bold;
+
+}
+
+.fa-sun {
+    color: rgb(245, 191, 14);
+}
+
+.fa-tint {
+    color: rgb(6, 166, 214);
+}
+
+/* maybe call this something else - like class = "index-card" .card {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-decoration-break: 0 0px 20px 0 rgb(106, 118, 106);
+    background-color: rgba(246, 247, 246, 0.2);
+    transition: 0.3s;
+    border:rgb(3, 73, 3);
+} */
+
+@media only screen and (max-width: 999px) {
+    .carousel-local-shops {
+        min-height: 575px;
+    }
+}
+
+/*the media query below will adjust settings for my carousel in sm viewports. If the viewport is below 600 px, it will make the carousel smaller, not display the image, and make the text inside smaller so that it fits*/
+@media only screen and (max-width: 600px) {
+    .carousel-local-shops {
+        min-height: 375px;
+    }
+
+    .carousel-caption-local-shops img {
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .carousel-caption-local-shops p {
+        font-size: small;
+
+    }
+}
