@@ -11,6 +11,34 @@ body {
     padding: 30px;
     color: rgb(247, 247, 247);
 }
+.owl-prev { left: 10px; }
+.owl-next { right: 5px; }
+.owl-prev i, .owl-next i {transform : scale(1,3); color: white; opacity: 60%;}
+
+.owl-item.active{
+    opacity: 50%;
+}
+
+.owl-item.active.center {
+    opacity: 100%;
+    
+}
+
+.owl-carousel img{
+    height: 30rem;
+    width: auto;
+}
+
+.owl-carousel p {
+    color: white;
+}
+
+.owl-carousel div h2, .owl-carousel div .textoverlay{
+    position:absolute;
+    color:#FFF;
+   font-size:12px;
+   display:block;
+}
 
 nav {
     color: black;

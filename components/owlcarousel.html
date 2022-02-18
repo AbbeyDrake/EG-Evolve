@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/CSS/owl.carousel.css">
+    <link rel="stylesheet" href="/CSS/owl.theme.default.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div><h2>I am very happy with the service provided by E.G. Evolve. The service is responsive, thorough and timely. I never think twice about involving them in a major project, and I would definitely recommend E.G. Evolve as a resource in graphics design or printing!  </h2><img src="/img/download.png"></div>
+            <img src="/img/download.png">
+            <img src="/img/download.png">
+            <img src="/img/download.png">
+            <img src="/img/download.png">
+            <img src="/img/download.png">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<i class='fas fa-angle-left'></i>",
+                    "<i class='fas fa-angle-right'></i>"
+                ],
+                items: 3,
+                margin: 10,
+                center: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                loop: true,
+                smartSpeed: 200,
+                animateIn: "fadeIn", //will work when there is 1 item
+                animateOut: "fadeOut", //will work when there is 1 item
+                responsive: {
+                    0 : {
+                        items: 1,
+                        nav: false
+                    },
+                    530 : {
+                        items: 3,
+                        nav: true
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
